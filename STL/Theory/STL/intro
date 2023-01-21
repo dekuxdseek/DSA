@@ -1,0 +1,35 @@
+// Standard Template Library 
+// containers, iterators, algorithms, functors
+
+// containers: data structures which are pre implemented
+// 1. sequential:  vectors, stack, queue, pair(not a contaier but object of a class)
+// 2. oredered: map, multimap, set, multiset
+// 3. unoreder: unordered map, unordered set(hashmap)
+
+// Nested containers:
+// vector<vector<int>>
+// map<int,vector<int>>
+// set<pair<int,string>>
+// vector<map<int,set<int>>>
+
+// Iterators:
+// same as pointers, they point to memory address of containers
+// eg. begin(), end()
+// vector<int>:: iterator it; // relatively longer way to declare an iterator
+// continuity for containers
+
+// Algorithms:
+// upper bound
+// lower bound
+// sort(comp)
+// max_element
+// min_element
+// accumulate
+// reverse
+// count
+// find 
+// next_permutations
+// prev_permutations
+
+// Functors:
+// classes which can act as functions

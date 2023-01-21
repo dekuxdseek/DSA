@@ -1,0 +1,1 @@
+{"name":"Local: 1314_Matrix_Block_Sum","url":"x:\\DSA\\PrecomputationTechniques\\Problem\\1314_Matrix_Block_Sum.cpp","tests":[{"id":1673036558938,"input":"1\n3 3 \n1 2 3 4 5 6 7 8 9 \n1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\DSA\\PrecomputationTechniques\\Problem\\1314_Matrix_Block_Sum.cpp","group":"local","local":true}

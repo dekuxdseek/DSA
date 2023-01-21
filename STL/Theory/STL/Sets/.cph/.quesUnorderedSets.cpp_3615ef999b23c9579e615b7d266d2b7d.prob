@@ -1,0 +1,1 @@
+{"name":"Local: quesUnorderedSets","url":"x:\\STL\\Theory\\stl\\Sets\\quesUnorderedSets.cpp","tests":[{"id":1671992304873,"input":"1\n8\nabc\ndef\nabc\nghj\njkl\nghj\nghj\nabc\n2\nabc\nghj","output":"yes\nyes"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\STL\\Theory\\stl\\Sets\\quesUnorderedSets.cpp","group":"local","local":true}

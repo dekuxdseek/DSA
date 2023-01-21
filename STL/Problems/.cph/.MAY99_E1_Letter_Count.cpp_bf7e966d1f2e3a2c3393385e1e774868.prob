@@ -1,0 +1,1 @@
+{"name":"Local: MAY99_E1_Letter_Count","url":"x:\\STL\\Problems\\MAY99_E1_Letter_Count.cpp","tests":[{"id":1672321805339,"input":"3\nabcdabcdaaaa\nabcAbcAbcabc\naDDa","output":"a\nb\nD"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\STL\\Problems\\MAY99_E1_Letter_Count.cpp","group":"local","local":true}

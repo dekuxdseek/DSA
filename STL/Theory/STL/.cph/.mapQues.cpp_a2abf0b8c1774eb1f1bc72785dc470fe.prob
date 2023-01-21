@@ -1,0 +1,1 @@
+{"name":"Local: mapQues","url":"x:\\Codeforces\\stl\\mapQues.cpp","tests":[{"id":1671503546733,"input":"8\nabc\ndef\nabc\nghj\njkl\nghj\nghj\nabc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\Codeforces\\stl\\mapQues.cpp","group":"local","local":true}
