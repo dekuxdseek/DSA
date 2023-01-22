@@ -4,13 +4,13 @@ using namespace std;
 int lastIndex(int arr[], int idx, int x, int n){
     // write your code here
     if(idx == n) return -1;
-    int var = lastIndex(arr, idx + 1, x, n);
+    int i = lastIndex(arr, idx + 1, x, n);
     
-    if( var == -1 && arr[idx] == x)
+    if( i == -1 && arr[idx] == x)
     {
-        var = idx;
+        i = idx;
     }
-    return var;
+    return i;
 }
 
 int main(){
