@@ -4,30 +4,38 @@ using namespace std;
 //convert decimal num to binary num using recursion
 
 
-int deci_tobinary(int n)
+vector<int> deci_tobinary(int n)
 {
-    if(n == 0) return n;
-    int m = n%2;
-    int prev = deci_tobinary(n/2);
-    return (prev*10) + m;
+    if(n == 0)
+    {
+        vector<int> base;
+        return base;
+    }
+
+    long long  m = n%2;
+    
+    vector<int> res = deci_tobinary(n/2);
+    res.push_back(m);
+    return res;
+    
+
+
 }
 
 
 int main()
 {
-    int t;
+    long long t;
     cin >> t;
-    while(t>=1)
+    while(t--)
     {
-        int n;
+        long long n;
         cin >> n;
-        cout<< deci_tobinary(n) << "\n";
-        --t;
-    }
-    if(t == 1)
-    {
-        int n;
-        cin >> n;
-        cout<< deci_tobinary(n);
+        vector<int> result = deci_tobinary(n);
+
+        for(auto &val: result)
+        {
+            cout<<val;
+        }cout<<endl;
     }
 }
