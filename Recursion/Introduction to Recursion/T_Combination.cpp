@@ -2,12 +2,20 @@
 using namespace std;
 
 
-int  combination(int n, int r)
+// int  combination(int n, int r)
+// {
+  
+//     if(r == 0) return 1;
+//     if(r == n) return 1;
+//     return combination(n-1,r-1) + combination(n-1,r);
+// }
+
+
+long long  combination (int n, int r)
 {
-    if(r == 0) return n;
+    if(r == 0) return 1;
     if(r == n) return 1;
-    if(r == 1) return n;
-    return combination(n-1,r-1) + combination(n-1,r);
+    return combination(n,r-1) * (n-r+1)/r;
 }
 
 
