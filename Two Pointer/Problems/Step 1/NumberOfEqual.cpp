@@ -1,5 +1,5 @@
-// #include<bits/stdc++.h>
-// using namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 
 
 
@@ -52,56 +52,56 @@
 
 
 
-#include<bits/stdc++.h>
-using namespace std;
+// #include<bits/stdc++.h>
+// using namespace std;
 
 
 
-int main()
-{
-    long long n, m;
-    cin >> n >> m;
+// int main()
+// {
+//     long long n, m;
+//     cin >> n >> m;
 
 
 
-    map<long long , long long > a;
-    map<long long , long long > b;
+//     map<long long , long long > a;
+//     map<long long , long long > b;
 
-    while(n--)
-    {
-        long long  el ;
-        cin >> el;
-        a[el]++;
-    }
-     while(m--)
-    {
-        long long el ;
-        cin >> el;
-        b[el]++;
-    }
+//     while(n--)
+//     {
+//         long long  el ;
+//         cin >> el;
+//         a[el]++;
+//     }
+//      while(m--)
+//     {
+//         long long el ;
+//         cin >> el;
+//         b[el]++;
+//     }
 
-    auto ita = a.begin();
-    auto itb = b.begin();
+//     auto ita = a.begin();
+//     auto itb = b.begin();
 
 
-    long long sum = 0;
+//     long long sum = 0;
   
 
-  while(ita != a.end() && itb != b.end())
-  {
-    if((*ita).first < (*itb).first)ita++;
+//   while(ita != a.end() && itb != b.end())
+//   {
+//     if((*ita).first < (*itb).first)ita++;
 
-    else if ((*ita).first > (*itb).first) ++itb;
+//     else if ((*ita).first > (*itb).first) ++itb;
 
-    else
+//     else
 
-    {
-        sum += ( ((*ita).second) * ((*itb).second) );
-        ++ita;
-        ++itb;
-    }
-  }
-  cout << sum << endl;
+//     {
+//         sum += ( ((*ita).second) * ((*itb).second) );
+//         ++ita;
+//         ++itb;
+//     }
+//   }
+//   cout << sum << endl;
 
     
 
@@ -109,7 +109,7 @@ int main()
 
 
 
-}
+// }
 
 
 // int main()
@@ -167,3 +167,71 @@ int main()
 
 
 // }
+
+
+
+
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+int main()
+{
+    int n, m;
+    cin >> n >> m;
+
+    vector<int> a(n,0);
+    vector<int> b(m,0);
+
+    for(auto &val: a)cin >> val;
+    for(auto &val: b)cin >> val;
+
+    long long fj =1, fi=1 ;
+    long long sum = 0;
+    int i =0 , j  =0;
+
+    while(j<b.size() && i<a.size())
+    {
+        if (a[i] < b[j] ) ++i;
+        else if(a[i] > b[j]) ++j;
+
+        else //if(a[i] == b[j])
+        {
+            if(b[j] == b[j+1] && j+1 < m)
+            {
+                ++j;
+                ++fj;
+            }
+
+            else 
+            {
+              if(a[i] == a[i+1] && i+1 < n)
+              {
+              fi++;
+              ++i;   
+              }
+            
+              else//(b[j] != b[j+1] && a[i] != a[i+1])
+              {
+                sum+= (fi*fj);
+                fi = 1;
+                fj = 1;
+                ++i;
+                ++j;
+              }
+            }
+
+        }
+
+        
+        
+    }
+    cout << sum << endl;
+
+
+
+
+
+
+}
