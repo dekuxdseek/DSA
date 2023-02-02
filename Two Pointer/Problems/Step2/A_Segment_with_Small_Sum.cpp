@@ -1,4 +1,6 @@
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
+#include<climits>
 using namespace std;
 
 
@@ -19,36 +21,43 @@ int main()
     while(r<n)
     {
 
-        // if(sum + a[r] <= s)
-        // {
-        //     sum += a[r];
-        //     ans++;
-        //     ++r;
-        // }
-        // else 
-        // {
-        //     sum -=a[l];
-        //     ++l;
-        //     ans--;
-        // }
-
-        // maxi = max(ans, maxi);
-
 
         sum += a[r];
-        ++r;
-        if(sum <= s)
-        {
-            ans++;
+        ++r;++ans;
 
-        }
-        else{
+       
+            while(sum>s )
+            {
             ans--;
-            --l;
-        }
+            sum -= a[l];
+            ++l;
+            }
+        
+
+        maxi = max(ans,maxi);
 
     }
 
     cout << maxi << endl;
 
 }
+
+
+
+/*
+    for(int r = 0 ; r < n; ++r)
+    {
+        sum += a[r];
+        ans ++;
+
+        while(sum>s)
+        {
+            sum-= a[l];
+            l++;
+            --ans;
+        }
+
+        maxi = max(ans, maxi);
+    }
+
+*/
