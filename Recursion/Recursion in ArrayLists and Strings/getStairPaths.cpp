@@ -5,9 +5,14 @@ using namespace std;
 
 vector<string> getStairPaths(int n)
 {
-    if(n <=0)
+    if(n ==0)
     {
         vector<string> res = {""};
+        return res;
+    }
+    else if(n < 0)
+    {
+        vector<string> res = {};
         return res;
     }
 
