@@ -15,37 +15,30 @@ int main()
         }
         
     }
+
     for(int i = 0; i < s.length(); ++i)
     {
-        st.push(s[i]);
-    }
-
-
-    while(!st.empty())
-    {
-        if(st.top() == ')')
+        if(s[i] != ')')
         {
-            st.pop();
-            if(st.top() == '(' )
+            st.push(s[i]);
+        }
+        else
+        {
+            if(st.top() == '(')
             {
-                cout << "false" << endl;
+                cout << "true" << endl;
                 return 0;
             }
             else{
-                while(st.top() != '(')
+                while(st.top()!='(')
                 {
                     st.pop();
                 }
                 st.pop();
             }
         }
-        else{
-            st.pop();
-        }
     }
-
-    cout << "true" << endl;
-
-
+    cout << "false" << endl;
+    return 0;
    
 }

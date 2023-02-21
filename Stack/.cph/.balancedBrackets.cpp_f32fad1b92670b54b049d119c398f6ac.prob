@@ -1,0 +1,1 @@
+{"name":"Local: balancedBrackets","url":"x:\\DSA\\Stack\\balancedBrackets.cpp","tests":[{"id":1676976937854,"input":"[(a + b) + {(c + d) * (e / f)}]","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\DSA\\Stack\\balancedBrackets.cpp","group":"local","local":true}
