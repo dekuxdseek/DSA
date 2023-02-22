@@ -1,0 +1,1 @@
+{"name":"Local: nextGreaterElementOnTheRight","url":"x:\\DSA\\Stack\\nextGreaterElementOnTheRight.cpp","tests":[{"id":1677064900671,"input":"\n5\n5 3 8 -2 7","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"x:\\DSA\\Stack\\nextGreaterElementOnTheRight.cpp","group":"local","local":true}
